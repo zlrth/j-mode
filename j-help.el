@@ -214,7 +214,7 @@ string * int -> (string * string) list"
   (interactive "sJ Symbol: ")
   (let ((url (j-help-symbol-to-doc-url symbol)))
     (message "Loading %s ..." url)
-    (browse-url url)))
+    (eww-browse-url url)))
 
 ;;;###autoload
 (defun j-help-lookup-symbol-at-point ( point )
